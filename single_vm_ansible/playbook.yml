@@ -1,0 +1,14 @@
+---
+- name: vagrant_demo
+  hosts: localhost
+  sudo: yes
+  handlers: 
+    - name: restart httpd
+      service: name=httpd state=restarted
+  tasks:
+    - name: stop firewalld
+      service: name=firewalld state=stopped
+
+    - name: install apache
+      yum: name=httpd state=present
+      notify: restart httpd
