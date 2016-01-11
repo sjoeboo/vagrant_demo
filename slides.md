@@ -15,7 +15,8 @@ controls: true
 * Creates reusable, progamable VMs for development and testing
 * Can create vms on: Virtualbox, Vmware, AWS, etc etc.
 * Can provision vms with: shell, puppet, chef, ansible, etc. 
-
+* From Hashi Corp (makes consul, terraform, atlas, packer, etc)
+* https://www.vagrantup.com/
 --
 ### Vagrant use cases
 * Test an ansible playbook?
